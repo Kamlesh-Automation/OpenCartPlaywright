@@ -1,0 +1,14 @@
+[
+    {
+        "testName": "Valid Login",
+        "email": "pw@bakuun.com",
+        "password": "test@123",
+        "expected": "success"
+    },
+    {
+        "testName": "Invalid Login",
+        "email": "abcxyz@xyz.com",
+        "password": "abcxyz",
+        "expected": "failure"
+    }
+]

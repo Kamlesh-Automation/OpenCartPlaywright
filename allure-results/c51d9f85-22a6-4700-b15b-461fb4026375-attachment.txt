@@ -1,0 +1,6 @@
+Error occurred while clicking on My Account link:", Error: locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('span:has-text(\'My Account\')')
+    - waiting for "http://tutorialsninja.com/demo/" navigation to finish...
+    - navigated to "http://tutorialsninja.com/demo/"
+

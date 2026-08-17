@@ -1,0 +1,4 @@
+Error occurred while entering product name in search box:", Error: locator.fill: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('input[placeholder=\'search\']')
+
