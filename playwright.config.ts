@@ -9,14 +9,16 @@ retries:1,
 workers: 1,
 reporter: [
 ['html'],
-['allure-playwright'],
-['dot'],
-['list']
+//['allure-playwright'],
+//['dot'],
+//['list']
 ],
 use: {
 trace: 'on-first-retry',
 screenshot: 'only-on-failure',
 video: 'retain-on-failure',
+/* Base URL to use in actions like `await page.goto('')`. */
+baseURL: 'https://restful-booker.herokuapp.com',
 //headless: false,
 viewport: { width: 1280, height: 720 }, // Set default viewport size for consistency
 ignoreHTTPSErrors: true, // Ignore SSL errors if necessary
