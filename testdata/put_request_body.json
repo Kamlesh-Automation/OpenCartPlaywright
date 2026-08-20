@@ -1,0 +1,11 @@
+{
+    "firstname": "Sachin",
+    "lastname": "Tendulkar",
+    "totalprice": 1800,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2026-06-23",
+        "checkout": "2026-06-25"
+    },
+    "additionalneeds": "No Meal"
+}
