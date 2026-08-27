@@ -8,6 +8,8 @@ export class LoginPage
     private readonly textPassword: Locator;
     private readonly btnLogin:Locator;
     private readonly txtErrorMessage:Locator;
+    private readonly txtresetConfirmationLink:Locator;
+    private readonly forgotPassword:Locator;
     
     //constructor
 
@@ -18,6 +20,8 @@ export class LoginPage
         this.textPassword = this.page.locator('#input-password');
         this.btnLogin = this.page.locator('input[value="Login"]');
         this.txtErrorMessage = this.page.locator('.alert.alert-danger.alert-dismissible');
+        this.txtresetConfirmationLink = this.page.locator('.alert-success.alert-dismissible');
+        this.forgotPassword = this.page.locator('.form-group a');
     }
     //Action method
     /** 
@@ -38,6 +42,10 @@ export class LoginPage
     {
         await this.btnLogin.click();
     }
+    async clickOnForgotLink()
+    {
+        await this.forgotPassword.click();
+    }
 
     /**
      * Perform compete login action
@@ -56,4 +64,11 @@ export class LoginPage
     {
         return (this.txtErrorMessage.textContent());
     }
+
+    async resetConfirmationLink():Promise<null | string>
+    {
+        return (this.txtresetConfirmationLink.textContent());
+    }
+
+
 }
