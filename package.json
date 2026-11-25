@@ -22,7 +22,7 @@
   "devDependencies": {
     "@playwright/test": "^1.62.1",
     "@types/luxon": "^3.7.4",
-    "@types/node": "^26.2.0",
+    "@types/node": "^26.6.5",
     "ajv": "^8.20.0",
     "allure-commandline": "^2.43.0",
     "allure-playwright": "^3.10.2",
