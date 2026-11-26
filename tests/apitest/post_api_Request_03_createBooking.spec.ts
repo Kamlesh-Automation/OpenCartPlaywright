@@ -17,8 +17,8 @@ test("Create Post request using json body", async ({ request }) => {
 
     //Data generation
 
-    const  firstname = faker.person.firstName();
-    const  lastname = faker.person.lastName();
+    const firstname = faker.person.firstName();
+    const lastname = faker.person.lastName();
     const totalprice = faker.number.int({min:100, max:10000});
     const depositpaid = faker.datatype.boolean();
     const checkindate = DateTime.now().toFormat('yyyy-MM-dd');

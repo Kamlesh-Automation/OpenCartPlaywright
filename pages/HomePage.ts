@@ -57,7 +57,6 @@ export class HomePage {
             throw error;
         }
     }
-
     async enterProductName(productName: string) {
         try {
             await this.txtSearchbox.fill(productName);
@@ -66,7 +65,6 @@ export class HomePage {
             throw error;
         }
     }
-
     async clickOnSearchButton() {
         try {
             await this.btnSearch.click();
